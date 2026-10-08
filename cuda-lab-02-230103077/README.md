@@ -1,8 +1,8 @@
 # CUDA Lab 02: Advanced Geometries & Stencils
 
-**Student ID:** 230103077
-**Allocated GPU Node:** Tesla T4
-**CUDA Compute Capability:** 7.5
+**Student ID:** 230103077<br>
+**Allocated GPU Node:** Tesla T4<br>
+**CUDA Compute Capability:** 7.5<br>
 **Official Verification Token:** C76A500563EE23A488D7
 
 ## Task 1: Warp divergence benchmark (N = 2^20, 1,000 iterations/element, 256 threads/block, mean of 10 trials)
