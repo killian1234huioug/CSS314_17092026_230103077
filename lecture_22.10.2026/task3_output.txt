@@ -1,0 +1,16 @@
+=== TASK 3: CACHE LINE CONTENTION ===
+Student ID: 230103077
+Physical CPU cores: 8
+Increments per thread: 50000000
+Threads: 8
+
+Method                 Wall Time (ms)
+-----------------------------------
+Unpadded Shared             125.007
+Local Variables              17.834
+
+Shared total: 400000000
+Local total:  400000000
+Execution ratio (shared/local): 7.009x
+Verification: PASSED
+Status: COMPLETED
