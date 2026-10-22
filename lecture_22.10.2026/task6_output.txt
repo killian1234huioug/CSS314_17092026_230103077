@@ -1,0 +1,24 @@
+=== TASK 6: SYNCHRONIZATION COST & DATA LOSS ===
+Student ID: 230103077
+Operating System: Darwin
+Parallel threads: 4
+Increments per thread: 2,000,000
+
+--- Version A: Without Lock ---
+Expected final value: 8,000,000
+Actual final value:   4,000,000
+Lost updates:         4,000,000
+Lost updates (%):     50.0000%
+Wall-clock time:      0.509 seconds
+
+--- Version B: With Lock ---
+Expected final value: 8,000,000
+Actual final value:   8,000,000
+Lost updates:         0
+Wall-clock time:      1.060 seconds
+
+--- Synchronization Cost ---
+Time penalty: +0.550 seconds
+Relative time change: +108.08%
+Verification: PASSED
+Status: COMPLETED
