@@ -1,0 +1,21 @@
+=== TASK 2: MULTI-CORE SCALING VS AMDAHL'S LAW ===
+Student ID: 230103077
+Operating System: macOS-26.2-arm64-arm-64bit
+CPU: arm
+Logical Cores: 8
+Array Size: 20,000,000
+Data Type: float64
+Parallelizable Fraction (P): 0.95
+Execution: ThreadPoolExecutor + NumPy
+
+  Cores | Wall Time (ms) |  Speedup | Amdahl Upper Bound
+----------------------------------------------------------
+      1 |          3.635 |    1.000 |              1.000
+      2 |          2.761 |    1.317 |              1.905
+      4 |          2.803 |    1.297 |              3.478
+      8 |          2.139 |    1.699 |              5.926
+     16 |          2.238 |    1.624 |              9.143
+
+Mathematical Sum: 10000217.4333858937
+Verification: PASSED (all worker counts agree)
+Status: COMPLETED
