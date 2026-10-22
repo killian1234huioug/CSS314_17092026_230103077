@@ -1,0 +1,24 @@
+=== TASK 2: PSEUDO-RANDOM GENERATOR STATE BOTTLENECK ===
+Student ID: 230103077
+Logical CPU count: 8
+Monte Carlo sample points: 40,000,000
+Threads: 4
+Chunk size: 250,000
+
+Running shared PRNG with lock...
+Running independent PRNGs...
+
+--- Shared PRNG (with lock) ---
+Computed pi:       3.1415916000
+Absolute error:    0.0000010536
+Wall time:         302.094 ms
+
+--- Independent PRNG (one per thread) ---
+Computed pi:       3.1412766000
+Absolute error:    0.0003160536
+Wall time:         90.694 ms
+
+--- Performance Comparison ---
+Speedup: 3.331x
+Verification: PASSED (both estimates are within 0.01 of pi)
+Status: COMPLETED
