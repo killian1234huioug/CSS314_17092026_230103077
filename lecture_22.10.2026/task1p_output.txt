@@ -1,0 +1,18 @@
+=== TASK 1: ROW-MAJOR VS COLUMN-MAJOR CACHE TRAVERSAL ===
+Student ID: 230103077
+Logical core count: 8
+Physical core count (reported by OS may differ): 8
+Matrix: 8,000 x 8,000
+Data type: float64
+Parallel workers: 8
+Timing: median of 3 runs
+
+Running Mode A: Row-Major...
+Running Mode B: Column-Major / Strided...
+
+Mode A (Row-Major) runtime: 6.858 ms
+Mode B (Column-Major) runtime: 83.279 ms
+Cache penalty factor (B / A): 12.143x
+Matrix sum: 32000578.025520
+Verification: PASSED (both modes produce matching sums)
+Status: COMPLETED
