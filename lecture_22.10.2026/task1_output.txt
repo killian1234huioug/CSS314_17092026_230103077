@@ -1,0 +1,12 @@
+=== TASK 1: HARDWARE PROBE & SERIAL BASELINE ===
+Student ID: 230103077
+Operating System: macOS-26.2-arm64-arm-64bit
+CPU Model: Apple M3
+Logical Cores: 8
+Array Size: 20,000,000
+Data Type: float64
+Execution Mode: Serial (1 thread)
+Mathematical Sum: 10000217.4333859105
+Standard Deviation: 0.2887014945
+Execution Time: 58.622 ms
+Status: COMPLETED
