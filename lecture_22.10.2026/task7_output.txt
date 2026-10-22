@@ -1,0 +1,33 @@
+=== TASK 7: ARITHMETIC INTENSITY VS MEMORY BOTTLENECKS ===
+Student ID: 230103077
+CPU architecture: arm64
+Logical CPU count: 8
+Array size: 30,000,000 float64 elements
+Workers tested: [1, 2, 8]
+Timing: median of 3 runs
+
+Running Kernel A: vector copy...
+Running Kernel B: sin*cos + tan...
+
+Kernel A: Memory-Bound Copy
+   Cores     Time (s)      Speedup    Efficiency
+-----------------------------------------------
+       1        0.009        1.000       100.0%
+       2        0.006        1.370        68.5%
+       8        0.006        1.505        18.8%
+
+Kernel B: Compute-Intensive Math
+   Cores     Time (s)      Speedup    Efficiency
+-----------------------------------------------
+       1        0.383        1.000       100.0%
+       2        0.187        2.047       102.3%
+       8        0.082        4.692        58.7%
+
+=== SCALING ANALYSIS ===
+Kernel A efficiency at 8 cores: 18.8%
+Kernel B efficiency at 8 cores: 58.7%
+Diagnosis: Kernel A showed weaker scaling than Kernel B, consistent with a memory-bandwidth bottleneck.
+Conclusion: Kernel A is the stronger candidate for memory-channel saturation on this run.
+
+Verification: PASSED
+Status: COMPLETED
