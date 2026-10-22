@@ -1,0 +1,22 @@
+=== TASK 5: THE OVERHEAD CROSSOVER POINT ===
+Student ID: 230103077
+CPU: arm64
+Available logical CPUs: 8
+Operation: y[i] = 2.5 * x[i] + 1.5
+Timing: median of 3 runs
+
+           N    Serial (ms)    Parallel (ms)    Speedup       Result
+--------------------------------------------------------------------
+           1          0.001            0.068      0.017       SLOWER
+       1,000          0.001            0.226      0.005       SLOWER
+      10,000          0.004            0.232      0.016       SLOWER
+     100,000          0.026            0.269      0.096       SLOWER
+   1,000,000          0.266            0.715      0.372       SLOWER
+  10,000,000          4.189            4.207      0.996       SLOWER
+
+=== OVERHEAD CROSSOVER ANALYSIS ===
+No slower-to-faster crossover was observed between the tested array sizes.
+Parallel execution was not faster at any tested size.
+
+Verification: PASSED (serial and parallel outputs match)
+Status: COMPLETED
