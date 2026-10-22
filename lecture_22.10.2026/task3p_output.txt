@@ -1,0 +1,15 @@
+=== TASK 3: PREFIX SCAN ===
+Student ID: 230103077
+Logical CPU count: 8
+Array size: 2,000,000
+Values: integers from 1 to 10
+Parallel workers: 4
+Timing: median of 3 runs
+
+    Serial Time (ms) |   Parallel Time (ms) |    Speedup | Verification Status
+-----------------------------------------------------------------------------------
+               3.659 |                3.445 |     1.062x | PASS
+
+Serial final sum:   11,000,621
+Parallel final sum: 11,000,621
+Status: COMPLETED
