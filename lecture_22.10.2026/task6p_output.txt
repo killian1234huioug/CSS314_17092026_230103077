@@ -1,0 +1,19 @@
+=== TASK 6: Mutex vs Atomic CAS ===
+Threads: 8
+Increments per thread: 1000000
+Total operations per benchmark: 8000000
+
+64-bit atomic is lock-free: YES
+
+Mutex final counter: 8000000
+CAS final counter:   8000000
+
+Mutex Execution Time: 137.17 ms
+Mutex Throughput:     58323491.26 ops/sec
+
+Atomic CAS Execution Time: 882.27 ms
+Atomic CAS Throughput:     9067560.12 ops/sec
+
+Throughput Ratio (CAS / Mutex): 0.1555
+
+Verification: PASSED
