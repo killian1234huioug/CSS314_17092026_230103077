@@ -17,11 +17,8 @@ def unsafe_worker():
     global shared_counter
 
     for i in range(INCREMENTS_PER_THREAD):
-        # Read and write separately, without a lock.
         value = shared_counter
 
-        # Yield occasionally to make thread interleaving observable.
-        # This is not synchronization and does not protect the counter.
         if i % 1000 == 0:
             time.sleep(0)
 
