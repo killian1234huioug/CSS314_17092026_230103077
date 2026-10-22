@@ -1,0 +1,14 @@
+=== TASK 4: WORK STEALING & SCHEDULING UNDER SKEW ===
+Student ID: 230103077
+Operating System: Darwin
+Items: 1000
+Parallel Workers: 4
+Workload: sleep(0.0001 * (i % 20))
+
+Strategy               Total Time (ms)    Completion Delta (ms)
+---------------------------------------------------------------
+A: Static                      298.014                   11.610
+B: Dynamic (chunk=1)           296.708                    1.880
+
+Verification: PASSED (1000 items processed per strategy)
+Status: COMPLETED
