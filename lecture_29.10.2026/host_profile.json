@@ -1,0 +1,31 @@
+{
+  "cpu": {
+    "model_name": "Apple M3",
+    "microarchitecture": "Apple M3 family (exact core microarchitecture not exposed)",
+    "base_frequency_mhz": null,
+    "physical_core_count": 8,
+    "logical_execution_threads": 8,
+    "smt_or_hyper_threading": false
+  },
+  "cache": {
+    "l1_data_bytes": 65536,
+    "l2_bytes": 4194304,
+    "l3_shared_bytes": null,
+    "cache_line_bytes": 128
+  },
+  "operating_system": {
+    "system": "Darwin",
+    "release": "25.2.0",
+    "version": "Darwin Kernel Version 25.2.0: Tue Nov 18 21:03:25 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T8122",
+    "machine": "arm64"
+  },
+  "python": {
+    "version": "3.9.6",
+    "implementation": "CPython",
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3"
+  },
+  "detection_notes": [
+    "Some cache values are not exposed by sysctl on this macOS version; null means unavailable, not zero.",
+    "Apple Silicon base frequency is not reliably exposed by standard macOS command-line telemetry; base_frequency_mhz is null rather than guessed."
+  ]
+}
