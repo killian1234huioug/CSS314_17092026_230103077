@@ -1,0 +1,71 @@
+# Task 12 — Communication Overhead Penalty Integration
+
+## 1. Introduction
+
+Classic Gustafson's Law assumes that the serial fraction remains constant as the number of processors increases.
+
+However, distributed systems need communication between processors. Communication can become more expensive when the system grows.
+
+This task introduces a communication penalty into Gustafson's model.
+
+## 2. Classic Gustafson's Formula
+
+The original scaled speedup is:
+
+\[
+S_G(P)=P-\alpha(P-1)
+\]
+
+where:
+- \(P\) is the number of processors.
+- \(\alpha\) is the serial fraction.
+
+This formula does not explicitly include communication overhead.
+
+## 3. Modified Model
+
+Let \(C(P)\) represent the additional communication time relative to the normalized parallel execution time.
+
+The modified speedup can be written as:
+
+\[
+\boxed{
+S_C(P)=\frac{P-\alpha(P-1)}{1+C(P)}
+}
+\]
+
+For example, communication overhead may grow logarithmically:
+
+\[
+C(P)=\beta\log_2(P)
+\]
+
+where \(\beta\) represents the communication cost.
+
+The model becomes:
+
+\[
+S_C(P)=
+\frac{P-\alpha(P-1)}
+{1+\beta\log_2(P)}
+\]
+
+For systems with communication that grows with the square root of processor count, another possible model is:
+
+\[
+C(P)=\gamma\sqrt{P}
+\]
+
+where \(\gamma\) is a communication cost coefficient.
+
+## 4. Interpretation
+
+When communication overhead is small, the modified model is close to classic Gustafson's Law.
+
+When communication overhead increases, speedup becomes lower.
+
+For example, if processors frequently exchange data, they may spend more time waiting for messages instead of performing useful calculations.
+
+## 5. Conclusion
+
+Communication overhead is an important limitation of weak scaling. The modified model shows that speedup depends not only on the serial fraction but also on communication cost. Therefore, efficient communication and good workload distribution are important for large parallel systems.
