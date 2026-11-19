@@ -1,0 +1,108 @@
+{
+  "student": {
+    "git_username": "killian1234huioug",
+    "student_id": "230103077",
+    "name": "Kraman Zhaniya"
+  },
+  "context": {
+    "git_username": "killian1234huioug",
+    "logical_cores": 8,
+    "cache_line_size": 128,
+    "cpu_model": "Apple M3",
+    "cpu_sig": "arm64::Apple M3::8",
+    "instance_seed": 9323859433452863523,
+    "affinity_supported": false,
+    "affinity_cores": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "iterations_per_thread": 60000000,
+  "num_threads": 4,
+  "results": {
+    "stride_1": {
+      "stride_elems": 1,
+      "stride_bytes": 8,
+      "elapsed_ns": 306345458,
+      "ns_per_update": 5.105757633333333,
+      "ns_per_update_aggregate": 1.2764394083333332,
+      "voluntary_ctx_switches": 0,
+      "involuntary_ctx_switches": 809,
+      "final_values": [
+        90000000,
+        90000000,
+        90000000,
+        90000000
+      ]
+    },
+    "stride_4": {
+      "stride_elems": 4,
+      "stride_bytes": 32,
+      "elapsed_ns": 294549750,
+      "ns_per_update": 4.9091625,
+      "ns_per_update_aggregate": 1.227290625,
+      "voluntary_ctx_switches": 0,
+      "involuntary_ctx_switches": 631,
+      "final_values": [
+        90000000,
+        90000000,
+        90000000,
+        90000000
+      ]
+    },
+    "stride_8": {
+      "stride_elems": 8,
+      "stride_bytes": 64,
+      "elapsed_ns": 268536166,
+      "ns_per_update": 4.4756027666666665,
+      "ns_per_update_aggregate": 1.1189006916666666,
+      "voluntary_ctx_switches": 0,
+      "involuntary_ctx_switches": 1040,
+      "final_values": [
+        90000000,
+        90000000,
+        90000000,
+        90000000
+      ]
+    },
+    "stride_16": {
+      "stride_elems": 16,
+      "stride_bytes": 128,
+      "elapsed_ns": 265307209,
+      "ns_per_update": 4.421786816666667,
+      "ns_per_update_aggregate": 1.1054467041666667,
+      "voluntary_ctx_switches": 0,
+      "involuntary_ctx_switches": 242,
+      "final_values": [
+        90000000,
+        90000000,
+        90000000,
+        90000000
+      ]
+    },
+    "private_baseline": {
+      "elapsed_ns": 10017042,
+      "ns_per_update": 0.1669507,
+      "ns_per_update_aggregate": 0.041737675,
+      "voluntary_ctx_switches": 0,
+      "involuntary_ctx_switches": 41,
+      "final_values": [
+        90000000,
+        90000000,
+        90000000,
+        90000000
+      ]
+    },
+    "slowdown_stride1_vs_stride8": 1.140797765020597
+  },
+  "audit": {
+    "bit_exact_parity": true,
+    "llvm_store_i64_found": true,
+    "llvm_store_i64_count": 1,
+    "llvm_load_i64_count": 5,
+    "no_object_fallback": true
+  },
+  "verification_passed": true
+}
