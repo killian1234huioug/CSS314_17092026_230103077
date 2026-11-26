@@ -3,15 +3,6 @@ OpenMP Multithreading & Performance Engineering in Python
 Student: Kraman Zhaniya
 Student ID: 230103077
 
-Run locally:
-    python3 -m pip install numpy numba
-    python3 openmp_lab_230103077.py
-
-IMPORTANT:
-This lab explicitly requires Numba's native OpenMP threading layer ("omp").
-The script checks that requirement and stops rather than silently using another
-threading backend. Numba's OpenMP backend is not generally available in the
-standard macOS Numba build; see the notes printed if the check fails.
 """
 
 import os
