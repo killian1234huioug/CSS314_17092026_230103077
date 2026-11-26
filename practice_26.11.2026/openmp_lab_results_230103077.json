@@ -1,0 +1,122 @@
+{
+  "instructor": "Instructor - Sufyan bin Uzayr",
+  "student_name": "Kraman Zhaniya",
+  "student_id": 230103077,
+  "omp_layer": "omp",
+  "cpu_cores": 8,
+  "verification_digest": "0FC349377A5E7B4355F8",
+  "task1": {
+    "lost_counts_10_runs": [
+      3623901,
+      3564629,
+      3434298,
+      3548453,
+      3482487,
+      3526641,
+      3473858,
+      3577162,
+      3573101,
+      3518917
+    ],
+    "max_discrepancies_10_runs": [
+      73024,
+      71936,
+      69377,
+      71453,
+      70601,
+      71081,
+      70175,
+      72221,
+      72014,
+      70870
+    ],
+    "safe_histogram_total": 4824320,
+    "active_workers_at_8_threads": 8
+  },
+  "task2": {
+    "pad_stride_int64": 24,
+    "timings": {
+      "1": {
+        "unpadded_seconds": 0.02985387505032122,
+        "padded_seconds": 0.02988325001206249
+      },
+      "2": {
+        "unpadded_seconds": 0.030931124987546355,
+        "padded_seconds": 0.03061441599857062
+      },
+      "4": {
+        "unpadded_seconds": 0.03379999997559935,
+        "padded_seconds": 0.03374816698487848
+      },
+      "8": {
+        "unpadded_seconds": 0.04541304102167487,
+        "padded_seconds": 0.04055316699668765
+      }
+    },
+    "speedup_unpadded_vs_padded_at_8_threads": 1.119839568273032
+  },
+  "task3": {
+    "balanced_imbalance_ratio_at_8_threads": 1.0711530727890908,
+    "timings": {
+      "1": {
+        "static_seconds": 0.0421010420541279,
+        "balanced_seconds": 0.04178324999520555
+      },
+      "2": {
+        "static_seconds": 0.02229058399097994,
+        "balanced_seconds": 0.022051042004022747
+      },
+      "4": {
+        "static_seconds": 0.012500999961048365,
+        "balanced_seconds": 0.011286708002444357
+      },
+      "8": {
+        "static_seconds": 0.01091650000307709,
+        "balanced_seconds": 0.010039000015240163
+      }
+    },
+    "imbalance_ratios": {
+      "1": {
+        "static": 1.0,
+        "balanced": 1.0
+      },
+      "2": {
+        "static": 1.0000105907054204,
+        "balanced": 1.069902540166787
+      },
+      "4": {
+        "static": 1.0006780349346907,
+        "balanced": 1.0702843642595987
+      },
+      "8": {
+        "static": 1.0013035264984151,
+        "balanced": 1.0711530727890908
+      }
+    }
+  },
+  "task4": {
+    "grid_shape": [
+      416,
+      576
+    ],
+    "iterations": 600,
+    "timings_seconds": {
+      "1": 0.20012020802823827,
+      "2": 0.11626087495824322,
+      "4": 0.0824166249949485,
+      "8": 0.12070712499553338
+    },
+    "speedups": {
+      "1": 1.0,
+      "2": 1.721303130568339,
+      "4": 2.428153397940089,
+      "8": 1.6578988857173385
+    },
+    "max_abs_diff_vs_1_thread": {
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0
+    }
+  }
+}
